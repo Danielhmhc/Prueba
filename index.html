@@ -6,11 +6,12 @@
 -->
 <html>
 	<head>
-		<title>Arcana by HTML5 UP</title>
+		<title>Seguridad</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -24,15 +25,18 @@
 						<h1><a href="index.html" id="logo">Empresa <em> "eslogan" [Logo]</em></a></h1>
 
 					<!-- Nav -->
-						<nav id="nav">
+						<nav id="nav" class="navbar-collapse collapse navbar-fixed-top">
 							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
+								<li class="current"><a href="index.html">Inicio</a></li>
+								<li ><a href="index.html">Conocenos</a></li>
+								<li ><a href="index.html">Ubicanos</a></li>
+								<li ><a href="index.html">Contactanos</a></li>
 								<li>
-									<a href="#">Dropdown</a>
+									<a href="#">Servicios</a>
 									<ul>
-										<li><a href="#">Lorem dolor</a></li>
-										<li><a href="#">Magna phasellus</a></li>
-										<li><a href="#">Etiam sed tempus</a></li>
+										<li><a href="#">Logistico</a></li>
+										<li><a href="#">Adicionales</a></li>
+										<li><a href="#">Transporte</a></li>
 										<li>
 											<a href="#">Submenu</a>
 											<ul>
@@ -46,10 +50,11 @@
 										<li><a href="#">Veroeros feugiat</a></li>
 									</ul>
 								</li>
+								<!--
 								<li><a href="left-sidebar.html">Left Sidebar</a></li>
 								<li><a href="right-sidebar.html">Right Sidebar</a></li>
 								<li><a href="two-sidebar.html">Two Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
+								<li><a href="no-sidebar.html">No Sidebar</a></li>-->
 							</ul>
 						</nav>
 
@@ -57,10 +62,12 @@
 
 			<!-- Banner -->
 				<section id="banner">
+					<!--
 					<header>
 						<h2>Arcana: <em>A responsive site template freebie by <a href="http://html5up.net">HTML5 UP</a></em></h2>
 						<a href="#" class="button">Learn More</a>
 					</header>
+					-->
 				</section>
 
 			<!-- Highlights -->
@@ -241,6 +248,26 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script>
+				$(document).ready(function () {
+			        // Page scrolling feature
+			        $('a.page-scroll').bind('click', function(event) {
+			            var link = $(this);
+			            $('html, body').stop().animate({
+			                scrollTop: $(link.attr('href')).offset().top - 50
+			            }, 500);
+			            //$(link.attr('href')).addClass('animated bounceInLeft');
+			            //<asetTimeout($(link.attr('href')).removeClass('animated bounceInLeft'), 3000);
+			            event.preventDefault();
+			            //$(link.attr('href')).delay(3000).removeClass('animated bounceInLeft');
+			        });
 
+			        $('body').scrollspy({
+			            target: '.navbar-fixed-top',
+			            offset: 80
+
+			        });
+			    });
+			</script>
 	</body>
 </html>
