@@ -23,8 +23,8 @@
 
 					<!-- Logo -->
 						<h1><a href="index.html" id="logo">
-							JVJ<em>Grupo Geminis</em><br>
-							<img src="images/Logo.jpg" height="100px" alt="">
+							JVJ <em>Grupo Geminis</em><br>
+							<img id='Logo' src="images/Logo.jpg" height="100px" alt="">
 						</a></h1>
 
 					<!-- Nav -->
@@ -100,7 +100,7 @@
 								<div class="box highlight">
 									<i class="icon major fa-trophy"></i>
 									<h3>VISION</h3>
-									<p>Consolidar a Vigilancia y Seguridad 365 Ltda como modelo de desarrollo empresarial en soluciones integrales de seguridad con reconocimiento a nivel nacional.</p>
+									<p>Consolidar nuestra empresa como modelo de desarrollo empresarial en soluciones integrales de seguridad con reconocimiento a nivel nacional.</p>
 								</div>
 							</section>
 						</div>
@@ -113,7 +113,7 @@
 						<header class="major">
 							<h2>Ubicanos</h2>
 							<p>Tenemos presencia en <b>toda</b> la republica</p>
-							<img src="images/Republica.png" alt="" />
+							<img src="images/Republica.png" width="100%" alt="" />
 						</header>
 					</div>
 				</section>
@@ -258,9 +258,13 @@
 			        // Page scrolling feature
 			        $('a.page-scroll').bind('click', function(event) {
 			            var link = $(this);
+			            $('li').removeClass('current');
+			            $(link).parent().addClass('current');
 			            $('html, body').stop().animate({
 			                scrollTop: $(link.attr('href')).offset().top -61
 			            }, 500);
+			            //alert('Hola '+$(link.attr('href')).parent());
+			            
 			            event.preventDefault();
 			        });
 			    });
