@@ -2372,8 +2372,6 @@
 	.stiky {
 		position: fixed;
 		top: 0;
-		height: 10%;
-		padding: 0.8em 0.5em 0.8em 0.5em;
 	}
 
 	.ajusteStiky{
@@ -2493,7 +2491,7 @@
 /* Banner */
 
 	#banner {
-		background-image: url("../../images/banner2.jpg");
+		background-image: url("../../images/banner3.jpg");
 		background-position: center center;
 		background-size: cover;
 		height: 28em;
