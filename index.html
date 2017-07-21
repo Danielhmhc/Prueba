@@ -27,11 +27,11 @@
 					<!-- Nav -->
 						<nav id="nav" class="navbar-collapse collapse navbar-fixed-top">
 							<ul>
-								<li class="current"><a href="index.html">Inicio</a></li>
-								<li ><a href="index.html">Conocenos</a></li>
-								<li ><a href="index.html">Ubicanos</a></li>
+								<li class="current"><a class="page-scroll" href="#banner">Inicio</a></li>
+								<li ><a class="page-scroll" href="#conocer">Conocenos</a></li>
+								<li ><a class="page-scroll" href="#ubicacion">Ubicanos</a></li>
 								<li>
-									<a href="#">Servicios</a>
+									<a class="page-scroll" href="#servicio">Servicios</a>
 									<ul>
 										<li><a href="#">Logistico</a></li>
 										<li><a href="#">Adicionales</a></li>
@@ -49,7 +49,8 @@
 										<li><a href="#">Veroeros feugiat</a></li>
 									</ul>
 								</li>
-								<li ><a href="index.html">Contactanos</a></li>
+								<li ><a class="page-scroll" href="#cta">Cotizar</a></li>
+								<li ><a class="page-scroll" href="#footer">Contactanos</a></li>
 								<!--
 								<li><a href="left-sidebar.html">Left Sidebar</a></li>
 								<li><a href="right-sidebar.html">Right Sidebar</a></li>
@@ -71,7 +72,7 @@
 				</section>
 
 			<!-- Conocenos -->
-				<section class="wrapper style1">
+				<section id="conocer" class="wrapper style1">
 					<div class="container">
 						<header class="major">
 							<h2>Quienes somos</h2>
@@ -104,18 +105,18 @@
 				</section>
 
 				<!-- Ubicanos  -->
-				<section class="wrapper">
+				<section id="ubicacion" class="wrapper">
 					<div class="container">
 						<header class="major">
 							<h2>Ubicanos</h2>
 							<p>Tenemos presencia en <b>toda</b> la republica</p>
-							<img src="images/Republica.jpg" alt="" />
+							<img src="images/Republica.png" alt="" />
 						</header>
 					</div>
 				</section>
 
-			<!-- Posts -->
-				<section class="wrapper style1">
+			<!-- Servicio -->
+				<section id="servicio" class="wrapper style1">
 					<div class="container">
 						<header class="major">
 							<h2>Te ofrecemos</h2>
@@ -126,7 +127,7 @@
 								<div class="box post">
 									<a href="#" class="image left"><img src="images/pic01.jpg" alt="" /></a>
 									<div class="inner">
-										<h3>Servicio</h3>
+										<h3>Servicio Logistico</h3>
 										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
 									</div>
 								</div>
@@ -135,7 +136,7 @@
 								<div class="box post">
 									<a href="#" class="image left"><img src="images/pic02.jpg" alt="" /></a>
 									<div class="inner">
-										<h3>The Second Thing</h3>
+										<h3>Servicio Transporte</h3>
 										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
 									</div>
 								</div>
@@ -146,7 +147,7 @@
 								<div class="box post">
 									<a href="#" class="image left"><img src="images/pic03.jpg" alt="" /></a>
 									<div class="inner">
-										<h3>The Third Thing</h3>
+										<h3>Servicio Adicional</h3>
 										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
 									</div>
 								</div>
@@ -164,10 +165,10 @@
 					</div>
 				</section>
 
-			<!-- CTA -->
+			<!-- Cotización -->
 				<section id="cta" class="wrapper style3">
 					<div class="container">
-						<header>
+						<header class="major">
 							<h2>¿Te intersa? Haz una cotización gratis</h2>
 							<a href="#" class="button">Iniciar</a>
 						</header>
@@ -175,58 +176,34 @@
 				</section>
 
 			<!-- Footer -->
-				<div id="footer">
+				<section id="footer">
 					<div class="container">
 						<div class="row">
-							<section class="3u 6u(narrower) 12u$(mobilep)">
-								<h3>Links to Stuff</h3>
-								<ul class="links">
-									<li><a href="#">Mattis et quis rutrum</a></li>
-									<li><a href="#">Suspendisse amet varius</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum accumsan dolor</a></li>
-									<li><a href="#">Mattis rutrum accumsan</a></li>
-									<li><a href="#">Suspendisse varius nibh</a></li>
-									<li><a href="#">Sed et dapibus mattis</a></li>
-								</ul>
-							</section>
-							<section class="3u 6u$(narrower) 12u$(mobilep)">
-								<h3>More Links to Stuff</h3>
-								<ul class="links">
-									<li><a href="#">Duis neque nisi dapibus</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum accumsan sed</a></li>
-									<li><a href="#">Mattis et sed accumsan</a></li>
-									<li><a href="#">Duis neque nisi sed</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum amet varius</a></li>
-								</ul>
-							</section>
-							<section class="6u 12u(narrower)">
-								<h3>Get In Touch</h3>
+							<div class="-2u 8u 12u(narrower)">
+								<h3>Envianos tus dudas</h3>
 								<form>
 									<div class="row 50%">
 										<div class="6u 12u(mobilep)">
-											<input type="text" name="name" id="name" placeholder="Name" />
+											<input type="text" name="name" id="name" placeholder="Nombre" />
 										</div>
 										<div class="6u 12u(mobilep)">
-											<input type="email" name="email" id="email" placeholder="Email" />
+											<input type="email" name="email" id="email" placeholder="Correo" />
 										</div>
 									</div>
 									<div class="row 50%">
 										<div class="12u">
-											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+											<textarea name="message" id="message" placeholder="Mensaje" rows="5"></textarea>
 										</div>
 									</div>
 									<div class="row 50%">
 										<div class="12u">
 											<ul class="actions">
-												<li><input type="submit" class="button alt" value="Send Message" /></li>
+												<li><input type="submit" class="button alt" value="Enviar" /></li>
 											</ul>
 										</div>
 									</div>
 								</form>
-							</section>
+							</div>
 						</div>
 					</div>
 
@@ -246,7 +223,7 @@
 							</ul>
 						</div>
 
-				</div>
+				</section>
 
 		</div>
 
@@ -264,8 +241,10 @@
 					var $scrollTop = $(window).scrollTop();
 					if($scrollTop >= $navTop){
 						$nav.addClass('stiky');
+						$('#banner').addClass('ajusteStiky');
 					}else{
 						$nav.removeClass('stiky');
+						$('#banner').removeClass('ajusteStiky');
 					}
 				}
 
@@ -277,18 +256,9 @@
 			        $('a.page-scroll').bind('click', function(event) {
 			            var link = $(this);
 			            $('html, body').stop().animate({
-			                scrollTop: $(link.attr('href')).offset().top - 50
+			                scrollTop: $(link.attr('href')).offset().top -61
 			            }, 500);
-			            //$(link.attr('href')).addClass('animated bounceInLeft');
-			            //<asetTimeout($(link.attr('href')).removeClass('animated bounceInLeft'), 3000);
 			            event.preventDefault();
-			            //$(link.attr('href')).delay(3000).removeClass('animated bounceInLeft');
-			        });
-
-			        $('body').scrollspy({
-			            target: '.navbar-fixed-top',
-			            offset: 80
-
 			        });
 			    });
 			</script>
