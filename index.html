@@ -6,12 +6,12 @@
 -->
 <html>
 	<head>
-		<title>Seguridad</title>
+		<title>JVJ: Grupo Geminis</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		
+		<script src="assets/js/jquery.min.js"></script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -22,7 +22,7 @@
 				<div id="header">
 
 					<!-- Logo -->
-						<h1><a href="index.html" id="logo">Empresa <em> "eslogan" [Logo]</em></a></h1>
+						<h1><a href="index.html" id="logo">JVJ <em> Grupo Geminis [Logo]</em></a></h1>
 
 					<!-- Nav -->
 						<nav id="nav" class="navbar-collapse collapse navbar-fixed-top">
@@ -30,7 +30,6 @@
 								<li class="current"><a href="index.html">Inicio</a></li>
 								<li ><a href="index.html">Conocenos</a></li>
 								<li ><a href="index.html">Ubicanos</a></li>
-								<li ><a href="index.html">Contactanos</a></li>
 								<li>
 									<a href="#">Servicios</a>
 									<ul>
@@ -50,6 +49,7 @@
 										<li><a href="#">Veroeros feugiat</a></li>
 									</ul>
 								</li>
+								<li ><a href="index.html">Contactanos</a></li>
 								<!--
 								<li><a href="left-sidebar.html">Left Sidebar</a></li>
 								<li><a href="right-sidebar.html">Right Sidebar</a></li>
@@ -70,9 +70,13 @@
 					-->
 				</section>
 
-			<!-- Highlights -->
+			<!-- Conocenos -->
 				<section class="wrapper style1">
 					<div class="container">
+						<header class="major">
+							<h2>Quienes somos</h2>
+							<p>VGL está conformada por un grupo de profesionales los cuales se mantienen actualizados sobre la normatividad vigente  y las  practicas necesarias para garantizar brindar un servicio integral que cumpla con las necesidades del cliente  inherente a la calidad y trato que nos caracteriza</p>
+						</header>
 						<div class="row 200%">
 							<section class="4u 12u(narrower)">
 								<div class="box highlight">
@@ -83,28 +87,29 @@
 							</section>
 							<section class="4u 12u(narrower)">
 								<div class="box highlight">
-									<i class="icon major fa-pencil"></i>
-									<h3>Also Important</h3>
-									<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+									<i class="icon major fa-flag-checkered"></i>
+									<h3>MISION</h3>
+									<p>Ofrecer servicios integrales de seguridad con los más altos estándares de calidad, ajustándolos a las necesidades de nuestros clientes empleando soluciones innovadoras y eficaces.</p>
 								</div>
 							</section>
 							<section class="4u 12u(narrower)">
 								<div class="box highlight">
-									<i class="icon major fa-wrench"></i>
-									<h3>Probably Important</h3>
-									<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+									<i class="icon major fa-trophy"></i>
+									<h3>VISION</h3>
+									<p>Consolidar a Vigilancia y Seguridad 365 Ltda como modelo de desarrollo empresarial en soluciones integrales de seguridad con reconocimiento a nivel nacional.</p>
 								</div>
 							</section>
 						</div>
 					</div>
 				</section>
 
-			<!-- Gigantic Heading -->
-				<section class="wrapper style2">
+				<!-- Ubicanos  -->
+				<section class="wrapper">
 					<div class="container">
 						<header class="major">
-							<h2>A gigantic heading you can use for whatever</h2>
-							<p>With a much smaller subtitle hanging out just below it</p>
+							<h2>Ubicanos</h2>
+							<p>Tenemos presencia en <b>toda</b> la republica</p>
+							<img src="images/Republica.jpg" alt="" />
 						</header>
 					</div>
 				</section>
@@ -112,12 +117,16 @@
 			<!-- Posts -->
 				<section class="wrapper style1">
 					<div class="container">
+						<header class="major">
+							<h2>Te ofrecemos</h2>
+							<p></p>
+						</header>
 						<div class="row">
 							<section class="6u 12u(narrower)">
 								<div class="box post">
 									<a href="#" class="image left"><img src="images/pic01.jpg" alt="" /></a>
 									<div class="inner">
-										<h3>The First Thing</h3>
+										<h3>Servicio</h3>
 										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
 									</div>
 								</div>
@@ -159,8 +168,8 @@
 				<section id="cta" class="wrapper style3">
 					<div class="container">
 						<header>
-							<h2>Are you ready to continue your quest?</h2>
-							<a href="#" class="button">Insert Coin</a>
+							<h2>¿Te intersa? Haz una cotización gratis</h2>
+							<a href="#" class="button">Iniciar</a>
 						</header>
 					</div>
 				</section>
@@ -242,13 +251,27 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script>
+				//Animación en Menú Stick
+				var $nav = $('#nav');
+				var $navTop = $nav.offset().top;
+				var pegarNav = function(){
+					var $scrollTop = $(window).scrollTop();
+					if($scrollTop >= $navTop){
+						$nav.addClass('stiky');
+					}else{
+						$nav.removeClass('stiky');
+					}
+				}
+
+				$(window).on('scroll',pegarNav);
+
+				//Scroll en la página
 				$(document).ready(function () {
 			        // Page scrolling feature
 			        $('a.page-scroll').bind('click', function(event) {
