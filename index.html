@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <!--
 	Arcana by HTML5 UP
 	html5up.net | @ajlkn
@@ -23,16 +23,19 @@
 
 					<!-- Logo -->
 						<h1><a href="index.html" id="logo">
-							JVJ <em>Grupo Geminis</em><br>
-							<img id='Logo' src="images/Logo.jpg" height="100px" alt="">
+							JVJ <em>Grupo Geminis </em>
+							<img id='logoImg' style="vertical-align: middle;" src="images/Logo.jpg" height="100px">
 						</a></h1>
 
 					<!-- Nav -->
 						<nav id="nav" class="navbar-collapse collapse navbar-fixed-top">
 							<ul>
+								
 								<li class="current"><a class="page-scroll" href="#banner">Inicio</a></li>
+								<li ><a class="page-scroll" href="#footer">Contáctanos</a></li>
+								<li ><a class="page-scroll" href="#cta">Cotizar</a></li>
 								<li ><a class="page-scroll" href="#conocer">Conocenos</a></li>
-								<li ><a class="page-scroll" href="#ubicacion">Ubicanos</a></li>
+								<li ><a class="page-scroll" href="#ubicacion">Ubícanos</a></li>
 								<li>
 									<a class="page-scroll" href="#servicio">Servicios</a>
 									<ul>
@@ -52,8 +55,6 @@
 										<li><a href="#">Veroeros feugiat</a></li>
 									</ul>
 								</li>
-								<li ><a class="page-scroll" href="#cta">Cotizar</a></li>
-								<li ><a class="page-scroll" href="#footer">Contactanos</a></li>
 								<!--
 								<li><a href="left-sidebar.html">Left Sidebar</a></li>
 								<li><a href="right-sidebar.html">Right Sidebar</a></li>
@@ -65,14 +66,60 @@
 				</div>
 
 			<!-- Banner -->
-				<section id="banner">
-					<!--
-					<header>
-						<h2>Arcana: <em>A responsive site template freebie by <a href="http://html5up.net">HTML5 UP</a></em></h2>
-						<a href="#" class="button">Learn More</a>
+			<section id="banner">
+				<!--
+				<header>
+					<h2>Arcana: <em>A responsive site template freebie by <a href="http://html5up.net">HTML5 UP</a></em></h2>
+					<a href="#" class="button">Learn More</a>
+				</header>
+				-->
+			</section>
+			
+			<!-- Contáctanos -->
+			<section id="ubicacion" class="wrapper">
+				<div class="container">
+					<header class="major">
+						<h3>Envianos tus dudas</h3>
+						<p></p>
 					</header>
-					-->
-				</section>
+					<div class="row">
+						<div class="-2u 8u 12u(narrower)">						
+							<form>
+								<div class="row 50%">
+									<div class="6u 12u(mobilep)">
+										<input type="text" name="name" id="name" placeholder="Nombre" />
+									</div>
+									<div class="6u 12u(mobilep)">
+										<input type="email" name="email" id="email" placeholder="Correo" />
+									</div>
+								</div>
+								<div class="row 50%">
+									<div class="12u">
+										<textarea name="message" id="message" placeholder="Mensaje" rows="5"></textarea>
+									</div>
+								</div>
+								<div class="row 50%">
+									<div class="12u">
+										<ul class="actions">
+											<li><input type="submit" class="button alt" value="Enviar" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Cotización -->
+			<section id="cta" class="wrapper style3">
+				<div class="container">
+					<header class="major">
+						<h2>¿Te intersa? Haz una cotización gratis</h2>
+						<a href="#" class="button">Iniciar</a>
+					</header>
+				</div>
+			</section>
 
 			<!-- Conocenos -->
 				<section id="conocer" class="wrapper style1">
@@ -111,7 +158,7 @@
 				<section id="ubicacion" class="wrapper">
 					<div class="container">
 						<header class="major">
-							<h2>Ubicanos</h2>
+							<h2>Ubícanos</h2>
 							<p>Tenemos presencia en <b>toda</b> la republica</p>
 							<img src="images/Republica.png" width="100%" alt="" />
 						</header>
@@ -168,22 +215,15 @@
 					</div>
 				</section>
 
-			<!-- Cotización -->
-				<section id="cta" class="wrapper style3">
-					<div class="container">
-						<header class="major">
-							<h2>¿Te intersa? Haz una cotización gratis</h2>
-							<a href="#" class="button">Iniciar</a>
-						</header>
-					</div>
-				</section>
-
 			<!-- Footer -->
 				<section id="footer">
 					<div class="container">
+						<header class="major">
+							<h3>Envianos tus dudas</h3>
+							<p></p>
+						</header>
 						<div class="row">
-							<div class="-2u 8u 12u(narrower)">
-								<h3>Envianos tus dudas</h3>
+							<div class="-2u 8u 12u(narrower)">						
 								<form>
 									<div class="row 50%">
 										<div class="6u 12u(mobilep)">
@@ -225,7 +265,6 @@
 								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
-
 				</section>
 
 		</div>
@@ -237,37 +276,103 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script>
-				//Animación en Menú Stick
+				//*******************   Animación en Menú Stick
 				var $nav = $('#nav');
 				var $navTop = $nav.offset().top;
+				var $bannerTop = $('#banner').offset().top; 
+				var $conocerTop = $('#conocer').offset().top; 
+				var $ubicacionTop = $('#ubicacion').offset().top;
+				var $servicioTop = $('#servicio').offset().top;
+				var $ctaTop = $('#cta').offset().top;
+				var $footerTop = $('#footer').offset().top;
+				var $alturaNav = $('#nav').height();
+
+				$.fn.extend({   
+			        // Devuelve true si el elemento está en window
+			        isInScene : function(arg)
+			        {   
+			            // Fuerza que arg sea un objeto
+			            arg = arg || {};
+			            // Valor por defecto de desfase
+			            arg.desfase = arg.desfase || 0;
+			            // Fuerza a que desfase sea númerico
+			            arg.desfase = parseInt(arg.desfase,10);
+			     
+			            // Posición vertical del elemento respecto al principio del documento
+			            var pos_container = $(this).offset().top;
+			     
+			            // Altura del elemento
+			            var container_height = $(this).outerHeight();
+			     
+			            // Posición vertical de document
+			            var pos_document = $(document).scrollTop();
+			     
+			            // Alto ventana
+			            var window_height = $(window).height(); 
+			     
+			            return (pos_document+window_height > pos_container+arg.desfase && pos_container+container_height > pos_document+arg.desfase);
+			        }
+			    });
+				
 				var pegarNav = function(){
 					var $scrollTop = $(window).scrollTop();
+					$alturaNav = $('#nav').height();
+
 					if($scrollTop >= $navTop){
 						$nav.addClass('stiky');
-						$('#banner').addClass('ajusteStiky');
+						//Arreglar el banner con espacio de barra
+						$('#banner').css('margin-top',$alturaNav);
 					}else{
 						$nav.removeClass('stiky');
-						$('#banner').removeClass('ajusteStiky');
+						$('#banner').css('margin-top','0');
 					}
-				}
 
-				$(window).on('scroll',pegarNav);
+					$('li').removeClass('current');
+					if(($scrollTop+$alturaNav) >=$footerTop){
+						$('a[href$="footer"]').parent().addClass('current');
+					}else if(($scrollTop+$alturaNav) >=$ctaTop){
+						$('a[href$="cta"]').parent().addClass('current');
+					}else if(($scrollTop+$alturaNav) >=$servicioTop){
+						$('a[href$="servicio"]').parent().addClass('current');
+					}else if(($scrollTop+$alturaNav) >=$ubicacionTop){
+						$('a[href$="ubicacion"]').parent().addClass('current');
+					}else if(($scrollTop+$alturaNav) >=$conocerTop){
+						$('a[href$="conocer"]').parent().addClass('current');
+					}else if(($scrollTop+$alturaNav) >=$bannerTop){
+						$('a[href$="banner"]').parent().addClass('current');
+					}
+				} 
 
 				//Scroll en la página
 				$(document).ready(function () {
 			        // Page scrolling feature
 			        $('a.page-scroll').bind('click', function(event) {
 			            var link = $(this);
-			            $('li').removeClass('current');
-			            $(link).parent().addClass('current');
 			            $('html, body').stop().animate({
 			                scrollTop: $(link.attr('href')).offset().top -61
-			            }, 500);
-			            //alert('Hola '+$(link.attr('href')).parent());
-			            
+			            }, 500);           
 			            event.preventDefault();
 			        });
 			    });
+			    
+
+			    $(window).on('scroll',pegarNav);
+
+			    $(window).resize(function() {
+					$bannerTop = $('#banner').offset().top; 
+					$conocerTop = $('#conocer').offset().top; 
+					$ubicacionTop = $('#ubicacion').offset().top;
+					$servicioTop = $('#servicio').offset().top;
+					$ctaTop = $('#cta').offset().top;
+					$footerTop = $('#footer').offset().top;
+					$alturaNav = $('#nav').height();   
+				});
+				/*
+				$(window).bind("resizeEnd", function() {
+				   // Acción
+				   alert("Termino de Cambiar|");
+				});*/
+
 			</script>
 	</body>
 </html>
