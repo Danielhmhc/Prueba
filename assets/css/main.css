@@ -2349,6 +2349,7 @@
 		background-size: 100% 6em,					100% 6em,					auto;
 		background-repeat: no-repeat,					no-repeat,					repeat;
 	}
+	
 
 		#header h1 {
 			padding: 0 0 15px 0;
@@ -2365,14 +2366,15 @@
 		width: 100%;
 		z-index: 1;
 		cursor: default;
-		background-color: #333;
+		background-color: transparent;
 		padding: 0;
-		transition: all 0.5s;
+		transition: all 0.4s;
 	}
 
 	.stiky {
 		position: fixed;
 		top: 0;
+		background-color: #333;
 	}
 
 	
@@ -2407,7 +2409,7 @@
 				}
 
 				#nav > ul > li:hover a {
-					color: #fff;
+					color: #EB3527;
 				}
 
 				#nav > ul > li.current {

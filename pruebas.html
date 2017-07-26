@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Kseso? jugando con css</title>
+<style type="text/css">
+* {
+  margin:0; padding:0; position: relative;
+}
+#container {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+}
+#izquierda, #derecha {
+  width:50%;
+  height: 100%;
+  float: left;
+}
+#izquierda {
+  background: red;
+}
+#derecha {
+  background: blue;
+}
+
+#izquierda:hover {background: yellow!important;}
+#izquierda:hover ~ div {background: orange;}
+#derecha:hover {background: yellow!important;}
+#derecha:hover ~ div {background: orange;}
+
+</style> 
+<script src="assets/js/jquery.min.js"></script>   
+</head>
+<body>
+<div id="container">
+    <div id="izquierda">Caja Izquierda</div>
+    <div id="derecha">Caja derecha</div>
+
+    XHTML
+
+  <p id="paraanimar" style="position:relative;">Párrafo para animar</p>
+      
+  <p><input type="button" id="boton1" value="Asignar 10px a la propiedad bottom del párrafo"></p>
+  <p><input type="button" id="boton2" value="Asignar 20px a la propiedad left del párrafo en 3 segundos"></p>
+  <p><input type="button" id="boton3" value="Asignar 200px a la propiedad right del párrafo en 5 segundos y callback"></p>
+  <p><input type="button" id="boton4" value="Asignar 10px a la propiedad top del párrafo"></p>
+  <p id="paraanimar" style="position:relative;">Párrafo para animar</p>
+      
+  <p><input type="button" id="boton1" value="Asignar 10px a la propiedad bottom del párrafo"></p>
+  <p><input type="button" id="boton2" value="Asignar 20px a la propiedad left del párrafo en 3 segundos"></p>
+  <p><input type="button" id="boton3" value="Asignar 200px a la propiedad right del párrafo en 5 segundos y callback"></p>
+  <p><input type="button" id="boton4" value="Asignar 10px a la propiedad top del párrafo"></p>
+</div>
+
+<script>
+  $(document).ready(function(){
+  $("#boton1").click(function(){
+    $("#paraanimar").animate({fontSize:"26px"});
+  });
+  $("#boton2").click(function(){
+    $("#paraanimar").animate({letterSpacing:"8px"},3000);
+  });
+  $("#boton3").click(function(){
+    $("#paraanimar").animate({wordSpacing:"20px"},5000,function() {alert ('Efecto terminado!');});
+  });
+  $("#boton4").click(function(){
+    $("#paraanimar").animate({lineHeight:"8px"});
+  });
+  $("#boton5").click(function(){
+    $("#paraanimar").animate({textIndent:"30px"});
+  });
+});
+</script>
+</body>
+</html>
