@@ -2,6 +2,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Kseso? jugando con css</title>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    
+
 <style type="text/css">
 * {
   margin:0; padding:0; position: relative;
@@ -28,6 +34,13 @@
 #derecha:hover {background: yellow!important;}
 #derecha:hover ~ div {background: orange;}
 
+.especial{
+  width: 100%;
+  height: 100%;
+  background: #000 50% 50% no-repeat;
+  background-size: cover;
+}
+
 </style> 
 <script src="assets/js/jquery.min.js"></script>   
 </head>
@@ -36,40 +49,34 @@
     <div id="izquierda">Caja Izquierda</div>
     <div id="derecha">Caja derecha</div>
 
-    XHTML
-
-  <p id="paraanimar" style="position:relative;">Párrafo para animar</p>
-      
-  <p><input type="button" id="boton1" value="Asignar 10px a la propiedad bottom del párrafo"></p>
-  <p><input type="button" id="boton2" value="Asignar 20px a la propiedad left del párrafo en 3 segundos"></p>
-  <p><input type="button" id="boton3" value="Asignar 200px a la propiedad right del párrafo en 5 segundos y callback"></p>
-  <p><input type="button" id="boton4" value="Asignar 10px a la propiedad top del párrafo"></p>
-  <p id="paraanimar" style="position:relative;">Párrafo para animar</p>
-      
-  <p><input type="button" id="boton1" value="Asignar 10px a la propiedad bottom del párrafo"></p>
-  <p><input type="button" id="boton2" value="Asignar 20px a la propiedad left del párrafo en 3 segundos"></p>
-  <p><input type="button" id="boton3" value="Asignar 200px a la propiedad right del párrafo en 5 segundos y callback"></p>
-  <p><input type="button" id="boton4" value="Asignar 10px a la propiedad top del párrafo"></p>
+    
 </div>
 
-<script>
-  $(document).ready(function(){
-  $("#boton1").click(function(){
-    $("#paraanimar").animate({fontSize:"26px"});
-  });
-  $("#boton2").click(function(){
-    $("#paraanimar").animate({letterSpacing:"8px"},3000);
-  });
-  $("#boton3").click(function(){
-    $("#paraanimar").animate({wordSpacing:"20px"},5000,function() {alert ('Efecto terminado!');});
-  });
-  $("#boton4").click(function(){
-    $("#paraanimar").animate({lineHeight:"8px"});
-  });
-  $("#boton5").click(function(){
-    $("#paraanimar").animate({textIndent:"30px"});
-  });
-});
-</script>
+      <div class="custom1 owl-carousel owl-theme">
+      Temas
+        <div class="item"><img src="images/seg1.jpg" alt=""></div>
+        <div class="item"><img src="images/seg2.jpg" alt=""></div>
+        <div class="item"><img src="images/seg3.jpg" alt=""></div>
+        <div class="item"><img src="images/seg1.jpg" alt=""></div>
+        <div class="item"><img src="images/seg2.jpg" alt=""></div>
+        <div class="item"><img src="images/seg3.jpg" alt=""></div>
+      </div>
+    
+
+
+    
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.custom1').owlCarousel({
+          animateOut: 'slideOutDown',
+          animateIn: 'flipInX',
+          items: 1,
+          margin: 30,
+          stagePadding: 30,
+          smartSpeed: 450
+        });
+      });
+    </script>
 </body>
 </html>

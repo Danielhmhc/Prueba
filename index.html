@@ -10,11 +10,12 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/animate.css" />
-		<link rel="stylesheet" href="assets/css/owl.carousel.css" />
 		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/owl.carousel.js"></script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -25,11 +26,16 @@
 				<div id="header">
 
 					<!-- Logo -->
-						<h1><a href="index.html" id="logo">
-							<img id='logoImg' style="vertical-align: middle;" src="images/Logo.jpg" height="100px">
-							JVJ <em>Grupo Geminis</em><br>
-						</a></h1>
-
+						<h1>
+							<a href="index.html" id="logo">
+								<img id='logoImg' style="vertical-align: middle;" src="images/Logo.jpg" height="100px">
+								JVJ <em>Grupo Geminis</em><br>
+							</a>
+						</h1>
+						<div class="-10u stiky contactos">
+							<span class="icon fa-phone-square"></span> Tel. 55-45-15-45-15 <br>
+							<span class="icon fa-envelope"></span> Empresa@correo.com
+						</div>
 					<!-- Nav -->
 						<nav id="nav" class="navbar-collapse collapse navbar-fixed-top">
 							<ul>
@@ -168,9 +174,48 @@
 					<div class="container">
 						<header class="major">
 							<h2>Ubícanos</h2>
-							<p>Tenemos presencia en <b>toda</b> la republica</p>
-							<img src="images/Republica.png" width="40%" alt="" />
+							<p></p>
 						</header>
+						<div class="row">
+							<div class="6u 12u(narrower)">
+								<h2>Tenemos presencia en <b>toda</b> la republica</h2>
+								<img src="images/Republica.png" width="100%" alt="" />
+							</div>
+							<div class="6u 12u(narrower)">
+								<h2>Nos ubicación en Google Maps</h2>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Contacto -->
+			
+			<section id="contacto" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Contáctanos</h2>
+						</header>
+						<div class="row 200%" style="text-align: center;">
+							<section class="4u 12u(narrower)">
+								<div class="box highlight">
+									<i class="icon major fa-phone-square"></i>
+									<h2>Llamanos</h2>
+									<h3>55-33-66-48-78.</h3>
+								</div>
+							</section>
+							<section class="4u 12u(narrower)">
+								<div class="box highlight">
+									<i class="icon major fa-envelope"></i>
+									<h3>Dejanos un mensaje</h3>
+								</div>
+							</section>
+							<section class="4u 12u(narrower)">
+								<div class="box highlight">
+									<i class="icon major fa-map-marker"></i>
+									<h3>Visitanos</h3>
+								</div>
+							</section>
+						</div>
 					</div>
 				</section>
 
@@ -182,13 +227,28 @@
 							<p></p>
 						</header>
 						<div class="row">
-							<div class="-2u 8u 12u(narrower)">						
+							<div class="7u 12u(narrower)">
+															
+							<div class="owl-carousel owl-theme">
+						      Temas
+						        <div class="item"><img src="images/seg1.jpg" alt=""></div>
+						        <div class="item"><img src="images/seg2.jpg" alt=""></div>
+						        <div class="item"><img src="images/seg3.jpg" alt=""></div>
+						        <div class="item"><img src="images/seg1.jpg" alt=""></div>
+						        <div class="item"><img src="images/seg2.jpg" alt=""></div>
+						        <div class="item"><img src="images/seg3.jpg" alt=""></div>
+						    </div>
+
+							</div>
+							<div class="5u 12u(narrower)"  id='formulario1'>						
 								<form>
+									<h3>Envianos tus dudas</h3>
+									
 									<div class="row 50%">
-										<div class="6u 12u(mobilep)">
+										<div class="12u 12u(mobilep)">
 											<input type="text" name="name" id="name" placeholder="Nombre" />
 										</div>
-										<div class="6u 12u(mobilep)">
+										<div class="12u 12u(mobilep)">
 											<input type="email" name="email" id="email" placeholder="Correo" />
 										</div>
 									</div>
@@ -224,17 +284,19 @@
 								<li>&copy; Untitled. Todos los derechos reservador</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
-
+						
 				</section>
 
 		</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/owl.carousel.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
 			<script>
 				//*******************   Animación en Menú Stick
 				var $nav = $('#nav');
@@ -246,34 +308,8 @@
 				var $ctaTop = $('#cta').offset().top;
 				var $footerTop = $('#footer').offset().top;
 				var $alturaNav = $('#nav').height();
-
-				$.fn.extend({   
-			        // Devuelve true si el elemento está en window
-			        isInScene : function(arg)
-			        {   
-			            // Fuerza que arg sea un objeto
-			            arg = arg || {};
-			            // Valor por defecto de desfase
-			            arg.desfase = arg.desfase || 0;
-			            // Fuerza a que desfase sea númerico
-			            arg.desfase = parseInt(arg.desfase,10);
-			     
-			            // Posición vertical del elemento respecto al principio del documento
-			            var pos_container = $(this).offset().top;
-			     
-			            // Altura del elemento
-			            var container_height = $(this).outerHeight();
-			     
-			            // Posición vertical de document
-			            var pos_document = $(document).scrollTop();
-			     
-			            // Alto ventana
-			            var window_height = $(window).height(); 
-			     
-			            return (pos_document+window_height > pos_container+arg.desfase && pos_container+container_height > pos_document+arg.desfase);
-			        }
-			    });
 				
+				//Funcion para pegar el nav
 				var pegarNav = function(){
 					var $scrollTop = $(window).scrollTop();
 					$alturaNav = $('#nav').height();
@@ -281,33 +317,35 @@
 					if($scrollTop >= $navTop){
 						$nav.addClass('stiky');
 						$nav.css('background-color','#333');
+						$('.contactos').css('color','#fff');
 						//Arreglar el banner con espacio de barra
-						$('#banner').css('margin-top',$alturaNav);
+						$('#header').css('padding-bottom',$alturaNav);
+
+						$('li').removeClass('current');
+						if(($scrollTop+$alturaNav) >=$footerTop){
+							$('a[href$="footer"]').parent().addClass('current');
+						}else if(($scrollTop+$alturaNav) >=$ubicacionTop){
+							$('a[href$="ubicacion"]').parent().addClass('current');
+						}else if(($scrollTop+$alturaNav) >=$conocerTop){
+							$('a[href$="conocer"]').parent().addClass('current');
+						}else if(($scrollTop+$alturaNav) >=$ctaTop){
+							$('a[href$="cta"]').parent().addClass('current');
+						}else if(($scrollTop+$alturaNav) >=$servicioTop){
+							$('a[href$="servicio"]').parent().addClass('current');
+						}else if(($scrollTop+$alturaNav) >=$bannerTop){
+							$('a[href$="banner"]').parent().addClass('current');
+						}
 					}else{
 						$nav.removeClass('stiky');
 						$nav.css({'background-color':'transparent','height':'auto'});
-						$('#banner').css('margin-top','0');
-					}
-
-					$('li').removeClass('current');
-					if(($scrollTop+$alturaNav) >=$footerTop){
-						$('a[href$="footer"]').parent().addClass('current');
-					}else if(($scrollTop+$alturaNav) >=$ubicacionTop){
-						$('a[href$="ubicacion"]').parent().addClass('current');
-					}else if(($scrollTop+$alturaNav) >=$conocerTop){
-						$('a[href$="conocer"]').parent().addClass('current');
-					}else if(($scrollTop+$alturaNav) >=$ctaTop){
-						$('a[href$="cta"]').parent().addClass('current');
-					}else if(($scrollTop+$alturaNav) >=$servicioTop){
-						$('a[href$="servicio"]').parent().addClass('current');
-					}else if(($scrollTop+$alturaNav) >=$bannerTop){
-						$('a[href$="banner"]').parent().addClass('current');
+						$('.contactos').css('color','#333');
+						$('#header').css('padding-bottom','0');
 					}
 				} 
 
-				//Scroll en la página
+				//Al cargar la pagina
 				$(document).ready(function () {
-			        // Page scrolling feature
+			        // Control en el desplazamiento del scroll
 			        $('a.page-scroll').bind('click', function(event) {
 			            var link = $(this);
 			            $('html, body').stop().animate({
@@ -315,6 +353,23 @@
 			            }, 500);           
 			            event.preventDefault();
 			        });
+
+			        //Cargar el carousel
+			        var owl = $('.owl-carousel');
+		              owl.owlCarousel({
+		                items: 4,
+		                loop: true,
+		                margin: 10,
+		                autoplay: true,
+		                autoplayTimeout: 1000,
+		                autoplayHoverPause: true
+		              });
+		              $('.play').on('click', function() {
+		                owl.trigger('play.owl.autoplay', [1000])
+		              })
+		              $('.stop').on('click', function() {
+		                owl.trigger('stop.owl.autoplay')
+		              })
 			    });
 			    
 
@@ -327,14 +382,21 @@
 					$servicioTop = $('#servicio').offset().top;
 					$ctaTop = $('#cta').offset().top;
 					$footerTop = $('#footer').offset().top;
-					$alturaNav = $('#nav').height();   
+					$alturaNav = $('#nav').height();
+					$navTop = $('#header').outerHeight()-$alturaNav;   
 				});
-				/*
-				$(window).bind("resizeEnd", function() {
-				   // Acción
-				   alert("Termino de Cambiar|");
-				});*/
-
+				
+				$('.loop').owlCarousel({
+				    center: true,
+				    items:2,
+				    loop:true,
+				    margin:10,
+				    responsive:{
+				        600:{
+				            items:4
+				        }
+				    }
+				});
 			</script>
 	</body>
 </html>
