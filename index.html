@@ -181,8 +181,9 @@
 								<h2>Tenemos presencia en <b>toda</b> la republica</h2>
 								<img src="images/Republica.png" width="100%" alt="" />
 							</div>
-							<div class="6u 12u(narrower)">
+							<div class="6u 12u(narrower)" >
 								<h2>Nos ubicación en Google Maps</h2>
+								<div id="map" style="width:500px; height: 400px; border: solid; border-color: #00FFFF  " ></div>
 							</div>
 						</div>
 					</div>
@@ -281,7 +282,7 @@
 					<!-- Copyright -->
 						<div class="copyright">
 							<ul class="menu">
-								<li>&copy; Untitled. Todos los derechos reservador</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Untitled. Todos los derechos reservador</li><li></li>
 							</ul>
 						</div>
 						
@@ -296,6 +297,29 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="http://maps.googleapis.com/maps/api/js"> </script>
+
+			<script>
+
+			 function init(){
+			        var mapOption = {
+			         center: new google.maps.LatLng(19.5209173,-99.1511504),
+			         zoom: 9,
+			         mapTypeId:google.maps.MapTypeId.ROADMAP
+			        }
+			    var map = new google.maps.Map(document.getElementById("map"),mapOption);
+			    var place = new google.maps.LatLng(19.5209173,-99.1511504);
+
+			    var marker = new google.maps.Marker({
+			    	position : place,
+			    	map:map
+			    });
+			 
+			 }
+
+			google.maps.event.addDomListener(window, 'load', init);
+
+			</script>
 
 			<script>
 				//*******************   Animación en Menú Stick
