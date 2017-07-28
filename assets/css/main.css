@@ -18,7 +18,7 @@
 		vertical-align: baseline;
 	}
 
-	html,body{
+	html, body{
 		height: 100%;
 		width: 100%;
 	}
@@ -2366,16 +2366,40 @@
 				letter-spacing: -0.025em;
 				border: 0;
 			}
+	
+	#formulario1{
+		background-color: #EB3527;
+		-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+		border-radius: 10px 10px 10px 10px;
+		-moz-border-radius: 10px 10px 10px 10px;
+		-webkit-border-radius: 10px 10px 10px 10px;
+		border: 0px solid #000000;
+	}
+
+	#formulario1 h2{
+		color: #fff;
+	}
+
+	.bannerContent{
+		padding: 1em 1em 1em 1em;
+		border: 1em 1em 1em 1em;
+	}
 
 	#nav {
 		width: 100%;
-		z-index: 1;
+		z-index: 2;
 		cursor: default;
 		background-color: transparent;
 		padding: 0;
 		transition: all 0.4s;
 	}
 
+	.tamMed{
+        height: 14em;
+    }
+	
 	.stiky {
 		position: fixed;
 		top: 0;
@@ -2384,7 +2408,7 @@
 	.contactos{
 		padding-top: 4px;
 		text-align: left;
-		z-index: 2;
+		z-index: 3;
 	}
 	
 		#nav:after {
@@ -2499,13 +2523,12 @@
 /* Banner */
 
 	#banner {
-		background-image: url("../../images/banner3.jpg");
+		background-image: url("../../images/paper1.png");
 		background-position: center center;
-		background-size: cover;
-		height: 28em;
+		background-size: cover; /*Ayuda a que quede de tamaño adecuado*/
+		height: 100%;
 		text-align: center;
 		position: relative;
-
 	}
 
 		#banner header {
